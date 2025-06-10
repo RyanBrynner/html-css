@@ -1,0 +1,131 @@
+@charset "UTF:8";
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Dancing+Script:wght@400..700&family=Oswald&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family:'idroid';
+    src: url('./fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+li::before{
+    content: " ✔";
+    color: green;
+    margin-right: 8px;
+}
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+}
+
+body{
+    background-color: rgb(198, 198, 168);
+}
+
+header{
+    background-image: linear-gradient(to bottom, rgb(46, 219, 121), rgb(48, 60, 74));
+    padding: 12px;
+}
+
+.cabecalho{
+    color: white;
+    text-align: center;
+}
+
+.cabecalho h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 43px;
+    margin-top: 10px;
+}
+
+p{
+    font-size: 25px;
+}
+
+nav{
+    font-size: 23px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    transition: 0.5s ease;
+}
+
+a:hover {
+    background-color: rgb(42, 164, 95);
+    border-radius: 5px;
+    transition: 0.5s ease;
+    padding: 10px;
+}
+
+main {
+    border-radius: 30px;
+    padding: 30px;
+    width: 1280px;
+    background-color: rgb(221, 220, 220);
+    box-shadow: 1px 2px 5px rgb(182, 173, 173);
+    margin: auto;
+}
+
+
+h1.titulo-body{
+    font-family:'idroid';
+    background-image: linear-gradient(to right, rgb(39, 193, 106), rgb(89, 221, 146), rgb(124, 206, 160), rgb(168, 206, 184), rgb(171, 207, 186), rgb(221, 220, 220) );
+}
+
+h2.titulo-body{
+    font-family:'idroid';
+    background-image: linear-gradient(to right, rgb(39, 193, 106), rgb(89, 221, 146), rgb(124, 206, 160), rgb(168, 206, 184), rgb(171, 207, 186), rgb(221, 220, 220) );
+}
+
+img {
+    margin-left: 40px ;
+    width: 1200px;
+    height: auto;
+}
+
+.imagem-bug{
+    width: 500px;
+    margin-left: 370px;
+}
+
+iframe{
+    border: 20px solid rgb(0, 48, 0);;
+    border-radius: 20px;
+}
+
+article{
+    background-color: rgb(175, 243, 204);
+    border-radius: 20px 20px 20px 20px;
+}
+
+h3{
+    background-color: rgb(39, 193, 106);
+    border-radius: 15px 15px 1px 1px;
+    font-size: 27px;
+    color: white;
+}
+
+article > p{
+    padding: 10px 20px 10px 20px;
+}
+
+ol{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+footer{
+    background-color: rgb(0, 48, 0);
+    height: 100px;
+}
+
+footer > p{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
