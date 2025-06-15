@@ -1,13 +1,21 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&display=swap');
 
+:root{
+        --fonte1: Arial, Helvetica, sans-serif;
+        --fonte2: "Dancing Script";
+        --fonte3: "Anton", sans-serif;
+}
 
 *{
     margin: 0px;
     padding: 0px;
+    font-family: var(--fonte1);
 }
 
+
 html, body{
+    font-family: var(--fonte1);
     min-height: 100vh;
     background-color: cadetblue;
 }
@@ -29,7 +37,8 @@ header{
 header > h1{
     padding-top: 50px;
     padding-bottom: 7px;
-    font-variant: small-caps;
+    font-family: var(--fonte3);
+    font-size: 2.5em;
 }
 
 header p{
@@ -50,8 +59,9 @@ header a:hover{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
+    line-height: 3em;
+    word-spacing: 7px;
+    padding-left: 40px;
 }
 
 section.normal{
@@ -59,14 +69,38 @@ section.normal{
     background-color: white;
 }
 
+section p{
+     font-family: var(--fonte2);
+     font-size: 2em;
+}
+
+section.normal p{
+    padding-bottom: 50px;
+}
+
 section.imagem{
     color: white;
     background-color: rgb(77, 77, 77);
+    box-shadow: inset 6px 6px 12px 6px rgba(0, 0, 0, 0.4);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 section.imagem > p{
-    background-color: rgba(0, 0, 0, 0.434);
-    width: 400px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.363);
+    text-shadow: 2px 1px 1px black;
+    padding: 10px;
+}
+
+section.imagem#img-01{
+    background-image: url(./imagens/background001.jpg);
+    background-position: right center;
+}
+
+section.imagem#img-02{
+    background-image: url(./imagens/background002.jpg);
+    background-position: right center;
 }
 
 footer{
