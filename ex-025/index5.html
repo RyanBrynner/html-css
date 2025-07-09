@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 20px;
+        }
+        
+        fieldset{
+            margin: auto;
+            width: 300px;
+            height: 120px;
+        }
+
+        legend{
+            text-align: center;
+        }
+
+        div{
+            padding-left: 95px;
+            font-size: 23px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <fieldset>
+        <legend>Sexo</legend>
+        <div>
+            <input type="radio" name="sexo" id="ismas" value="M" checked>
+            <label for="ismas">Masculino</label><br>
+            <input type="radio" name="sexo" id="isfem" value="F">
+            <label for="isfem">Feminino</label><br>
+        </div>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Esportes favoritos</legend>
+        <div>
+            <input type="checkbox" name="esbas" id="iebas" checked>
+            <label for="iebas">Basquete</label><br>
+            <input type="checkbox" name="esfut" id="iefut">
+            <label for="iefut">Futebol</label><br>
+            <input type="checkbox" name="esvol" id="ievol">
+            <label for="esvol">Volei</label><br>
+            <input type="checkbox" name="esquei" id="iequei">
+            <label for="iequei">queimada</label><br>
+        </div>
+    </fieldset>
+    <input type="submit" value="Enviar">
+    <input type="" value="limpar">
+</body>
+</html>
