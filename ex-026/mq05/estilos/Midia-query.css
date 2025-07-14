@@ -1,0 +1,27 @@
+@charset "UTF-08";
+
+@media print{
+    body{
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 10px;
+    }
+}
+
+@media screen and (min-width: 767px){
+    
+    #hamburguer{
+        display: none;
+    }
+
+    menu#itens{
+        display: block;
+        text-align: center;
+    }
+
+    menu#itens ul li{
+        display: inline-block;
+    }
+}
+
+
+
