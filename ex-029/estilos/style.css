@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    --cor1:#D5D7F2;
+    --cor2:#91A0F2;
+    --cor3:#A7BAF2;
+    --cor4:#B3C8F2;
+    --cor5:#F2D5D5;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor1);
+    box-sizing: border-box;
+}
+
+body.container{
+    display: grid;
+    grid-template-rows: 200px 80px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+header{
+    background: linear-gradient(to bottom, #91A0F2, #a7baf298 );
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header.caixa1{
+   grid-row: 1 / 2;
+   grid-column: 1 / 3;
+}
+
+header.caixa1 > h1{
+    color: rgba(255, 255, 255, 0.885);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.622);
+    padding: 10px;
+    margin: 10px;
+}
+
+nav{
+    display: flex;
+    background: linear-gradient(to bottom, #91A0F2, #a7baf298 );
+    justify-content: flex-end;
+    padding: 10px;
+    align-items: center;
+}
+
+nav.caixa2{
+    grid-row: 1 / 2;
+    grid-column: 3 / 5;
+}
+
+nav.caixa2 > a{
+    text-decoration: none;
+    padding: 15px;
+    border: 2px solid transparent;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.622);
+    margin: 5px 20px;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+nav.caixa2 > a:hover{
+    border: 2px solid white;
+    transition: 0.7s;
+    border-radius: 10px;
+}
+
+section{
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.822);
+}
+
+section.caixa3{
+    grid-row: 2 / 4;
+    grid-column: 1 / 4;
+}
+
+section.caixa3 > h2{
+    padding: 10px;
+    font-size: 30px;
+    margin: 20px 10px;
+}
+
+section.caixa3 > p{
+    font-size: 20px;
+    width: 600px;
+    padding: 3px 10px;
+    margin: 10px;
+}
+
+aside{
+    padding: 10px;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.737);
+}
+
+aside.caixa4{
+    grid-row: 2 / 4;
+    grid-column: 4 / 5;
+}
+
+aside.caixa4 > h2{
+    padding: 20px 10px 10px 10px;
+    margin: 20px 10px 10px 10px;
+}
+
+aside.caixa4 > p{
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer{
+    background-color: #B3C8F2;
+    display: flex;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.544);
+    align-items: center;
+    justify-content: center;
+}
+
+footer.caixa5{
+    grid-row: 5 / 6;
+    grid-column: 1 / 5;
+}
